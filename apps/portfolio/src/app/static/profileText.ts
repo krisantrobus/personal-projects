@@ -1,9 +1,9 @@
 import {
-  IExperience,
-  IEducation,
   ISkills,
-  IEmployer,
   ICertification,
+  IEmployer,
+  IEducation,
+  IExperience,
 } from './interfaces';
 
 export const _profileSummary: string[] = [
