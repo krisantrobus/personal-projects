@@ -2,7 +2,9 @@
   "name": "@personal-projects/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "serve": "nx serve portfolio"
+  },
   "private": true,
   "dependencies": {
     "next": "~16.0.1",
