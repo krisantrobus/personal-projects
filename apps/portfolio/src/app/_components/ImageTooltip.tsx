@@ -15,7 +15,7 @@ export const ImageTooltip: React.FC<ITechnology> = (detials: ITechnology) => {
           alt={`image of employer ${detials.name}`}
         />
       </Popover.Trigger>
-      <Popover.Content>
+      <Popover.Content placement="top">
         <Popover.Dialog>
           <Popover.Arrow />
           <Popover.Heading>{detials.name}</Popover.Heading>
