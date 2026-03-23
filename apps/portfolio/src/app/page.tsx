@@ -43,6 +43,13 @@ export default function Index() {
           {..._experienceList[0]}
           key={`${_experienceList[0].title}`}
         />
+        <Card className="bg-white">
+          <div className="flex justify-center">
+            {_employers.map((e) => (
+              <ImageTooltip {...e} />
+            ))}
+          </div>
+        </Card>
         <div className="my-16">
           <p className="mb-4">
             Over a 10-year career, I have developed a broad and well-rounded
