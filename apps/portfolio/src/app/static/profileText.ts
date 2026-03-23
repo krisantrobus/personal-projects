@@ -25,14 +25,6 @@ export const _personalMeta: any = {
 
 export const _experienceList: IExperience[] = [
   {
-    employer: 'Independent Projects',
-    title: 'Full Stack Developer',
-    duration: 'Ongoing',
-    details: [
-      `I have a passion for developing my own applications. I use these projects to challenge myself in new areas and learn new languages, almost always being full stack projects. Examples include a web chat that uses a Java Spring boot backend and an angular front end learning how to implement web sockets. Another being a task tracker to enhance python knowledge with Django and an Angular Ionic front end. This project is deployed on AWS to gain a greater insight to the cloud provider and its services. `,
-    ],
-  },
-  {
     employer: 'Twilio',
     location: 'Remote, USA',
     title: 'Full Stack Developer',

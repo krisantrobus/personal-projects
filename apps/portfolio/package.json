@@ -11,7 +11,7 @@
     "targets": {
       "build": {
         "outputs": [
-          "{workspaceRoot}/dist/apps/your-app"
+          "{workspaceRoot}/dist/apps/portfolio"
         ]
       }
     }
