@@ -14,11 +14,17 @@ export const _profileSummary: string[] = [
 export const _email: string = 'krisantrobus@gmail.com';
 export const _roleTitle: string = 'Software Engineer Specialist';
 
-export const _personalMeta: any = {
+export const _personalMeta: {
+  Born: string;
+  Location: string;
+  Email: string;
+  Website: string;
+  Languages: string;
+} = {
   Born: '11-Dec-1995',
   Location: 'Bloomington, MN, 55438',
   Email: 'krisantrobus@gmail.com',
-  Webiste: 'https://kantrobus.com',
+  Website: 'https://kantrobus.com',
   // Nationality: "British",
   Languages: 'English',
 };
@@ -118,6 +124,7 @@ export const _cvSkills: ISkills[] = [
   {
     yearCompetency: 8,
     skills: [
+      'Node.js',
       'Typescript',
       'Javascript',
       'HTML5',
@@ -154,6 +161,25 @@ export const _cvSkills: ISkills[] = [
       'Django',
     ],
   },
+];
+
+export const _topSkills: string[] = [
+  'Typescript',
+  'Node.js',
+  'Javascript',
+  'HTML5',
+  'SASS',
+  'CSS3',
+  'React',
+  'Angular',
+  'Node.js',
+  'Git',
+  'DevOPS',
+  'Agile',
+  'jest',
+  'Redux',
+  'Next.JS',
+  'Highcharts',
 ];
 
 export const _skillsList: string[] = [

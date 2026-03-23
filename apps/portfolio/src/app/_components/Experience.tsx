@@ -9,19 +9,19 @@ export const Experience: React.FC<IExperience> = ({
 }) => {
   return (
     <div className="flex flex-col mb-4">
-      <span className="small">{duration}</span>
-      <p className="mb-0">
-        <strong>{employer}</strong>
-      </p>
+      <span className="font-light">{duration}</span>
+      <p className="mb-0 text-md font-semibold">{employer}</p>
       <p>
-        <strong>
-          <em>{title}</em>
-        </strong>
+        <em className="font-semibold">{title}</em>
         {location && ` , ${location}`}
       </p>
 
       {details.map((detail: string, i) => {
-        return <p key={`exp-${i}`}>{detail}</p>;
+        return (
+          <p key={`exp-${i}`} className="mb-2">
+            {detail}
+          </p>
+        );
       })}
     </div>
   );
