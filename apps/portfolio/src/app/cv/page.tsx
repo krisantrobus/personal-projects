@@ -47,13 +47,13 @@ export default function Index() {
       </div>
       <div className="px-2 md:col-span-4 sm:col-span-12">
         <h4 className="mb-4">Contact</h4>
-        {Object.keys(_personalMeta).map((key, i) => {
+        {/* {Object.keys(_personalMeta).map((key, i) => {
           return (
             <p key={`personal-${i}`}>
               <strong>{key}</strong>: {_personalMeta[key]}
             </p>
           );
-        })}
+        })} */}
 
         <h4 className="my-2">Skills</h4>
         {_cvSkills.map((skill, i) => (
