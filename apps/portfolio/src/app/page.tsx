@@ -27,11 +27,12 @@ export default function Index() {
         </div>
         <Card className="text-left lg:-mt-60 -mt-35 mb-8 xl:ms-16 mx-4 xl:mx-0">
           <Card.Header className="text-left">
-            Kristian Antrobus | Fullstack
+            Kristian Antrobus | Fullstack Developer
           </Card.Header>
-          <h1 className="font-semibold -my-2">Fullstack Developer</h1>
           <div className="text-sm font-light">
-            {_personalMeta.Email} | {_personalMeta.Location}
+            {_personalMeta.Email}
+            <br />
+            {_personalMeta.Location}
           </div>
           <p>{_profileSummary[0]}</p>
           <p>{_profileSummary[1]}</p>
