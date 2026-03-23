@@ -25,7 +25,7 @@ export default function Index() {
             objectFit="cover"
           />
         </div>
-        <Card className="text-left lg:-mt-60 -mt-35 mb-8 lg:ms-16 mx-4 lg:mx-0">
+        <Card className="text-left lg:-mt-60 -mt-35 mb-8 xl:ms-16 mx-4 xl:mx-0">
           <Card.Header className="text-left">
             Kristian Antrobus | Fullstack
           </Card.Header>
