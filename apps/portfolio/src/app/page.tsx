@@ -45,7 +45,7 @@ export default function Index() {
           key={`${_experienceList[0].title}`}
         />
         <Card className="bg-white">
-          <div className="flex justify-center">
+          <div className="flex justify-center gap-4">
             {_employers.map((e) => (
               <ImageTooltip {...e} />
             ))}

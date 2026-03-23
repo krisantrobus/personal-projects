@@ -11,7 +11,7 @@ export const ImageTooltip: React.FC<ITechnology> = (detials: ITechnology) => {
         <Image
           height={40}
           src={detials.img}
-          className="my-1 mx-4"
+          className="my-1"
           alt={`image of employer ${detials.name}`}
         />
       </Popover.Trigger>
