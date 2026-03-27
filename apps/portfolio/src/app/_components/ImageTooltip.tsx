@@ -6,7 +6,10 @@ export const ImageTooltip: React.FC<ITechnology> = (detials: ITechnology) => {
   return (
     <Popover>
       <Popover.Trigger>
-        <div className="w-auto h-[40px]" style={{position: 'relative'}}>
+        <div
+          className={`h-[40px]`}
+          style={{ position: 'relative', width: detials.width }}
+        >
           <Image
             fill
             src={detials.img}

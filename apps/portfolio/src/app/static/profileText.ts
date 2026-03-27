@@ -220,18 +220,28 @@ export const _interest: string[] = [
 ];
 
 export const _employers: IEmployer[] = [
-  { name: 'Twilio', img: '/images/employers/twilio.png' },
-  { name: 'Salesforce', img: '/images/employers/salesforce.png' },
-  { name: 'OrangeBees', img: '/images/employers/orangebees.png' },
+  { name: 'Twilio', img: '/images/employers/twilio.png', width: '40px' },
+  {
+    name: 'Salesforce',
+    img: '/images/employers/salesforce.png',
+    width: '60px',
+  },
+  {
+    name: 'OrangeBees',
+    img: '/images/employers/orangebees.png',
+    width: '40px',
+  },
   {
     name: 'American Credit Acceptance',
     img: '/images/employers/aca.png',
+    width: '40px',
   },
   {
     name: 'Advanced Card Technologies',
     img: '/images/employers/act.png',
+    width: '90px',
   },
-  { name: 'British Telecomms', img: '/images/employers/bt.png' },
+  { name: 'British Telecomms', img: '/images/employers/bt.png', width: '40px' },
 ];
 
 export const _certifications: ICertification[] = [

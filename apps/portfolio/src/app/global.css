@@ -1,15 +1,15 @@
 @import 'tailwindcss';
 @import '@heroui/styles';
 
-/* @custom-variant hover (&:hover); */
+@layer theme, base, components, utilities;
 
+/* @custom-variant hover (&:hover); */
 /*
  * HeroUI Theme Customization
  * Add this to your global.css after importing @heroui/styles
  * Only includes base variables from variables.css
  * @see https://v3.heroui.com/docs/react/getting-started/theming
  */
-
 :root,
 .light,
 .default,
@@ -90,4 +90,32 @@
   --surface-tertiary-foreground: oklch(99.11% 0.0148 144.36);
   --warning: oklch(82.03% 0.1429 63.2);
   --warning-foreground: oklch(21.03% 0.0059 63.2);
+}
+
+@theme {
+  --animate-hero-fade-x: hero-fade-x 1s ease-out forwards;
+
+  @keyframes hero-fade-x {
+    0% {
+      opacity: 0;
+      transform: translateX(200px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  --animate-hero-fade-y: hero-fade-y 1s ease-out forwards;
+
+  @keyframes hero-fade-y {
+    0% {
+      opacity: 0;
+      transform: translateY(80px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }

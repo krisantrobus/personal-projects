@@ -8,6 +8,7 @@ export interface IFeaturedContent {
 export interface ITechnology {
   name: string;
   img: any;
+  width: string;
 }
 
 export interface IShowcase {
@@ -44,6 +45,7 @@ export interface ISkills {
 export interface IEmployer {
   name: string;
   img: string;
+  width: string;
 }
 
 export interface ICertification {
