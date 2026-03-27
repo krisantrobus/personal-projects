@@ -80,7 +80,11 @@ export default function Index() {
 
         <h4 className="mb-2 mt-6 text-lg font-semibold">Interests</h4>
         {_interest.map((interest, index) => {
-          return <p key={`interest-${index}`}>{interest}</p>;
+          return (
+            <p className="mb-4" key={`interest-${index}`}>
+              {interest}
+            </p>
+          );
         })}
       </div>
       <div className="md:col-span-8 col-span-12 px-4 mt-8 md:mt-0">
