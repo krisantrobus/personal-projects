@@ -19,7 +19,7 @@ export const Skills = ({
   return (
     <div className={`flex flex-wrap mx-auto justify-${align}`}>
       {skillsArr.map((skill, i) => (
-        <Chip key={`skill=${skill}-${i}`} className="m-1">
+        <Chip color="accent" key={`skill=${skill}-${i}`} className="m-1">
           {skill}
         </Chip>
       ))}

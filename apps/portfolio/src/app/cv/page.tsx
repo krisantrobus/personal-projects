@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Experience from '../_components/Experience';
 import Skills from '../_components/Skill';
 import { IEducation } from '../static/interfaces';
@@ -10,6 +11,7 @@ import {
   _personalMeta,
   _profileSummary,
 } from '../static/profileText';
+import { Button } from '@heroui/react';
 
 const Education: React.FC<IEducation> = ({
   duration,
@@ -18,8 +20,8 @@ const Education: React.FC<IEducation> = ({
   details,
 }) => {
   return (
-    <div className="d-flex flex-column mb-2">
-      <span className="small">{duration}</span>
+    <div className="d-flex flex-column mb-4">
+      <span className="font-light text-sm">{duration}</span>
       <p style={{ marginBottom: 0 }}>
         <strong>{qualification}</strong>
       </p>
@@ -35,18 +37,26 @@ const Education: React.FC<IEducation> = ({
 
 export default function Index() {
   return (
-    <div className="grid grid-cols-12">
-      <div className="flex flex-col px-2 col-span-12">
-        <h2 className="w-100 mb-2">Kristian Antrobus</h2>
-        <h4 className="w-100 cv-header">Full Stack Developer</h4>
-        <h4>Profile</h4>
-        {_profileSummary.map((p, i) => {
-          return <p key={`summary-${i}`}>{p}</p>;
-        })}
-        <h4 className="w-100 cv-header"></h4>
+    <div className="grid grid-cols-12 animate-hero-fade-y">
+      <div className="flex flex-col px-4 col-span-12">
+        <div className="my-4 flex justify-between items-center ">
+          <div>
+            <h1 className="mb-2 text-lg font-bold">Kristian Antrobus</h1>
+            <h2 className="text-lg font-semibold">Software Engineer</h2>
+          </div>
+          <Link href="/">
+            <Button variant="secondary">Home</Button>
+          </Link>
+        </div>
+        <div className="my-4 border-y-4 py-8">
+          <h4 className="mb-4 text-lg font-semibold">Profile</h4>
+          {_profileSummary.map((p, i) => {
+            return <p key={`summary-${i}`}>{p}</p>;
+          })}
+        </div>
       </div>
-      <div className="px-2 md:col-span-4 sm:col-span-12">
-        <h4 className="mb-4">Contact</h4>
+      <div className="px-4 md:col-span-4 col-span-12 lg:border-r-4 ">
+        <h4 className="mb-4 text-lg font-semibold">Contact</h4>
         {Object.entries(_personalMeta).map(([key, value], index) => {
           return (
             <p key={`personal-${index}`}>
@@ -55,7 +65,7 @@ export default function Index() {
           );
         })}
 
-        <h4 className="my-2">Skills</h4>
+        <h4 className="mb-2 mt-6 text-lg font-semibold">Skills</h4>
         {_cvSkills.map((skill, i) => (
           <div className="mb-4" key={`skills-${i}`}>
             <p className="mb-0">{skill.yearCompetency}+ Yrs</p>
@@ -63,18 +73,18 @@ export default function Index() {
           </div>
         ))}
 
-        <h4 className="my-2">Education</h4>
+        <h4 className="mb-2 mt-6 text-lg font-semibold">Education</h4>
         {_educationList.map((ed) => {
           return <Education {...ed} key={ed.qualification} />;
         })}
 
-        <h4 className="my-2">Interests</h4>
+        <h4 className="mb-2 mt-6 text-lg font-semibold">Interests</h4>
         {_interest.map((interest, index) => {
           return <p key={`interest-${index}`}>{interest}</p>;
         })}
       </div>
-      <div className="md:col-span-8 sm:col-span-12">
-        <h4 className="mb-4">Experience</h4>
+      <div className="md:col-span-8 col-span-12 px-4 mt-8 md:mt-0">
+        <h4 className="mb-4 text-lg font-semibold">Experience</h4>
         {_experienceList.map((exp, i) => {
           return <Experience {...exp} key={`${exp.title}${i}`} />;
         })}

@@ -1,7 +1,7 @@
 import './global.css';
 
 export const metadata = {
-  title: 'Kristian Antrobus - Software Developer',
+  title: 'Kristian Antrobus - Software Engineer',
   description:
     'Welcome to the portfolio for Kristian Antrobus. This site is designed to introduce you to the developer and their experience and skills.',
 };

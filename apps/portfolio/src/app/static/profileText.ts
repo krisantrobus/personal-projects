@@ -12,7 +12,7 @@ export const _profileSummary: string[] = [
 ];
 
 export const _email: string = 'krisantrobus@gmail.com';
-export const _roleTitle: string = 'Software Engineer Specialist';
+export const _roleTitle: string = 'Software Egineer';
 
 export const _personalMeta: {
   Born: string;
@@ -58,15 +58,6 @@ export const _experienceList: IExperience[] = [
     details: [
       `I worked across multiple Angular projects during my time here. Being the sole developer on 2 projects developing from use cases to MVPs and into production.`,
       `Closely working with an internal developer we produced a starter repository. The requirement was to produce a template application with highly reusable presentational and container components such as authentication services. To achieve the goal of being easily customised to fit the needs of new teams object orientation was implemented via typescript.`,
-    ],
-  },
-  {
-    employer: 'Freelance - Wake Forest Health',
-    location: 'Remote, UK',
-    title: 'Full Stack Engineer',
-    duration: 'January 2020 - March 2020',
-    details: [
-      `A requirement from a resident at Wake Forest brought me to become the sole developer on this project. The work entailed building a website that would allow all residents at that hospital to practice for their boards, a final exam before moving into fellowship. The tech stack was Angular with the backend using Firestore as both a document data and image store. A simplified demo version can be found via my portfolio website.`,
     ],
   },
   {
@@ -167,18 +158,18 @@ export const _topSkills: string[] = [
   'Typescript',
   'Node.js',
   'Javascript',
-  'HTML5',
-  'SASS',
-  'CSS3',
   'React',
   'Angular',
+  'Next.JS',
+  'AWS',
+  'HTML5',
+  'CSS3',
   'Node.js',
   'Git',
   'DevOPS',
   'Agile',
   'jest',
   'Redux',
-  'Next.JS',
   'Highcharts',
 ];
 

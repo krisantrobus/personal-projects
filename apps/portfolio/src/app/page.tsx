@@ -31,7 +31,7 @@ export default function Index() {
         </div>
         <Card className="text-left lg:-mt-60 -mt-35 mb-8 xl:ms-16 mx-4 xl:mx-0">
           <Card.Header className="text-left">
-            Kristian Antrobus | Fullstack Developer
+            Kristian Antrobus | Software Engineer
           </Card.Header>
           <div className="text-sm font-light">
             {_personalMeta.Email}
@@ -43,8 +43,10 @@ export default function Index() {
         </Card>
       </div>
       <div className="col-span-2 p-4 lg:h-dvh lg:-overflow-y-auto overflow-x-hidden">
-        <div className="lg:animate-hero-fade animate-hero-fade-y">
+        <div className="lg:animate-hero-fade-x sm:animate-hero-fade-y">
           <div className="mb-16">
+            <h2 className="text-lg font-semibold mb-4">Welcome,</h2>
+
             <p className="mb-4">
               Over a 10-year career, I have developed a broad and well-rounded
               expertise across multiple areas of software development and
@@ -55,7 +57,7 @@ export default function Index() {
           </div>
           <h2 className="text-lg font-semibold mb-4">Employers</h2>
           <Card className="bg-white mb-16">
-            <div className="flex justify-center gap-4">
+            <div className="flex justify-center flex-wrap gap-4">
               {_employers.map((e) => (
                 <ImageTooltip {...e} key={`employer-${e.name}`} />
               ))}
