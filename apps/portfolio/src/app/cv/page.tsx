@@ -68,7 +68,7 @@ export default function Index() {
         <h4 className="mb-2 mt-6 text-lg font-semibold">Skills</h4>
         {_cvSkills.map((skill, i) => (
           <div className="mb-4" key={`skills-${i}`}>
-            <p className="mb-0">{skill.yearCompetency}+ Yrs</p>
+            <p className="mb-2">{skill.yearCompetency}+ Yrs</p>
             <Skills skills={skill.skills} align="start" />
           </div>
         ))}

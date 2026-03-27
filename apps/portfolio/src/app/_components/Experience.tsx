@@ -18,7 +18,7 @@ export const Experience: React.FC<IExperience> = ({
 
       {details.map((detail: string, i) => {
         return (
-          <p key={`exp-${i}`} className="mb-2">
+          <p key={`exp-${i}`} className="mb-4">
             {detail}
           </p>
         );
