@@ -220,27 +220,27 @@ export const _interest: string[] = [
 ];
 
 export const _employers: IEmployer[] = [
-  { name: 'Twilio', img: require('../images/employers/twilio.png') },
-  { name: 'Salesforce', img: require('../images/employers/salesforce.png') },
-  { name: 'OrangeBees', img: require('../images/employers/orangebees.png') },
+  { name: 'Twilio', img: '/images/employers/twilio.png' },
+  { name: 'Salesforce', img: '/images/employers/salesforce.png' },
+  { name: 'OrangeBees', img: '/images/employers/orangebees.png' },
   {
     name: 'American Credit Acceptance',
-    img: require('../images/employers/aca.png'),
+    img: '/images/employers/aca.png',
   },
   {
     name: 'Advanced Card Technologies',
-    img: require('../images/employers/act.png'),
+    img: '/images/employers/act.png',
   },
-  { name: 'British Telecomms', img: require('../images/employers/bt.png') },
+  { name: 'British Telecomms', img: '/images/employers/bt.png' },
 ];
 
 export const _certifications: ICertification[] = [
   {
     name: 'AWS Cloud Practitioner 1',
-    img: require('../images/certifications/AWS-CloudPractitioner-2020.png'),
+    img: '/images/certifications/AWS-CloudPractitioner-2020.png',
   },
   {
     name: 'Platform Developer 1',
-    img: require('../images/certifications/pd1.jpg'),
+    img: '/images/certifications/pd1.jpg',
   },
 ];

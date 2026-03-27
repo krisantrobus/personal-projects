@@ -18,8 +18,8 @@ export const Skills = ({
   const skillsArr: string[] = limit ? [...skills].splice(0, limit) : skills;
   return (
     <div className={`flex flex-wrap mx-auto justify-${align}`}>
-      {skillsArr.map((skill) => (
-        <Chip key={`skill=${skill}`} className="m-1">
+      {skillsArr.map((skill, i) => (
+        <Chip key={`skill=${skill}-${i}`} className="m-1">
           {skill}
         </Chip>
       ))}

@@ -10,7 +10,6 @@ import {
 } from './static/profileText';
 import Skills from './_components/Skill';
 import { ImageTooltip } from './_components/ImageTooltip';
-import SelfImage from './images/self/featured-self.png';
 import Image from 'next/image';
 import Experience from './_components/Experience';
 
@@ -18,11 +17,12 @@ export default function Index() {
   return (
     <div className="lg:grid grid-cols-3 gap-4 h-100 block">
       <div>
-        <div className="rounded-xl overflow-hidden lg:w-[80%] w-75 my-4 mx-auto">
+        <div className="rounded-xl overflow-hidden lg:w-[80%] w-75 my-4 mx-auto h-[500px]" style={{position: 'relative'}}>
           <Image
-            src={SelfImage}
+            fill
+            src="/images/self/featured-self.png"
             alt="developer profile photo"
-            objectFit="cover"
+            style={{ objectFit: 'cover' }} 
           />
         </div>
         <Card className="text-left lg:-mt-60 -mt-35 mb-8 xl:ms-16 mx-4 xl:mx-0">
@@ -47,7 +47,7 @@ export default function Index() {
         <Card className="bg-white">
           <div className="flex justify-center gap-4">
             {_employers.map((e) => (
-              <ImageTooltip {...e} />
+              <ImageTooltip {...e} key={`employer-${e.name}`} />
             ))}
           </div>
         </Card>
