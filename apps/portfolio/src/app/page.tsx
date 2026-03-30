@@ -19,7 +19,7 @@ export default function Index() {
     <div className="lg:grid grid-cols-3 gap-4 h-100 block">
       <div className="animate-hero-fade-y">
         <div
-          className="rounded-xl overflow-hidden lg:w-[80%] w-75 my-4 mx-auto h-[500px]"
+          className="rounded-xl overflow-hidden lg:w-[80%] w-75 max-w-[400px] lg:min-h-[600px]  my-4 mx-auto h-[500px]"
           style={{ position: 'relative' }}
         >
           <Image
