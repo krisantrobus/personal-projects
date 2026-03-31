@@ -17,7 +17,7 @@ export const Skills = ({
 }: SkillComp) => {
   const skillsArr: string[] = limit ? [...skills].splice(0, limit) : skills;
   return (
-    <div className={`flex flex-wrap mx-auto justify-${align}`}>
+    <div className={`flex flex-wrap justify-${align}`}>
       {skillsArr.map((skill, i) => (
         <Chip color="accent" key={`skill=${skill}-${i}`} className="m-1">
           {skill}

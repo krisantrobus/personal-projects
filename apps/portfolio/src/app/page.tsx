@@ -7,12 +7,13 @@ import {
   _cvSkills,
   _experienceList,
   _topSkills,
+  _projects,
 } from './static/profileText';
 import Skills from './_components/Skill';
 import { ImageTooltip } from './_components/ImageTooltip';
 import Image from 'next/image';
-import Experience from './_components/Experience';
 import Link from 'next/link';
+import { ProjectOverview } from './_components/ProjectOverview';
 
 export default function Index() {
   return (
@@ -63,17 +64,28 @@ export default function Index() {
               ))}
             </div>
           </Card>
-          <h2 className="text-lg font-semibold mb-4">What have I worked on?</h2>
-          <h2>Most recent experience</h2>
-          <Experience
-            {..._experienceList[0]}
-            key={`${_experienceList[0].title}`}
-          />
-          <div className="flex justify-center my-8">
+          <div className="flex justify-between">
+            <h2 className="text-lg font-semibold mb-4">
+              What have I worked on?
+            </h2>
+
             <Link href="/cv">
               <Button variant="secondary">View resume</Button>
             </Link>
           </div>
+          {_projects.map((proj) => (
+            <div
+              key={`pro-summary-${proj.title.toLowerCase().replace('\s', '-')}`}
+              className="mb-4"
+            >
+              <ProjectOverview {...proj} />
+            </div>
+          ))}
+          {/* <h2>Most recent experience</h2>
+          <Experience
+            {..._experienceList[0]}
+            key={`${_experienceList[0].title}`}
+          /> */}
         </div>
       </div>
     </div>

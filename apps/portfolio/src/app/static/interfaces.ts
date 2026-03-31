@@ -52,3 +52,10 @@ export interface ICertification {
   name: string;
   img: any;
 }
+
+export interface IProjectOverview {
+  title: string;
+  tech: string[];
+  description: string[];
+  company?: IEmployer;
+}

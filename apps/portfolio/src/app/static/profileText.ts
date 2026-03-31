@@ -4,6 +4,7 @@ import {
   IEmployer,
   IEducation,
   IExperience,
+  IProjectOverview,
 } from './interfaces';
 
 export const _profileSummary: string[] = [
@@ -243,5 +244,29 @@ export const _certifications: ICertification[] = [
   {
     name: 'Platform Developer 1',
     img: '/images/certifications/pd1.jpg',
+  },
+];
+
+export const _projects: IProjectOverview[] = [
+  {
+    title: 'Paste Design System',
+    description: [
+      'This project involved contributing to an open-source design system used to power Twilio’s web applications. The system was built with a strong emphasis on accessibility, ensuring compliance with government and EU standards while enabling teams to create consistent, high-quality user interfaces. Individual components, as well as bundled packages, were published to NPM, making them easily consumable across internal and external projects.',
+      'Working closely with design teams, they iterated on UI components to deliver intuitive and inclusive user experiences. They also contributed to maintaining and evolving the documentation site, which served as a central resource for component usage, specifications, and best practices. To enhance discoverability, the documentation platform integrated OpenAI-powered search, leveraging vector-based indexing across documentation pages and GitHub discussions. This enabled a more intelligent search experience, complemented by an interactive chat interface to help users quickly find relevant information.',
+    ],
+    tech: [
+      'EmotionCSS',
+      'Reakit',
+      'NextJS',
+      'OpenAI',
+      'React',
+      'SEO',
+      'Chromatic',
+      'Figma',
+      'Accessibility',
+      'NPM',
+      'Github Pipelines',
+      'Supabase',
+    ],
   },
 ];
