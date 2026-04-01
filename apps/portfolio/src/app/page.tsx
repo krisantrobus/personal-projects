@@ -20,12 +20,12 @@ export default function Index() {
     <div className="lg:grid grid-cols-3 gap-4 h-100 block">
       <div className="animate-hero-fade-y">
         <div
-          className="rounded-xl overflow-hidden lg:w-[80%] w-75 max-w-[400px] lg:min-h-[600px]  my-4 mx-auto h-[500px]"
+          className="rounded-xl overflow-hidden lg:w-[80%] w-75 max-w-[400px] lg:min-h-[600px]  my-4 mx-auto h-[500px] bg-accent-foreground ring-2 ring-accent/10"
           style={{ position: 'relative' }}
         >
           <Image
             fill
-            src="/images/self/featured-self.png"
+            src="/images/self/featured-self-no-bg.png"
             alt="developer profile photo"
             style={{ objectFit: 'cover' }}
           />
