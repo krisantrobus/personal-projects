@@ -1,6 +1,6 @@
 'use client';
 
-import { Input, Button } from '@heroui/react';
+import { Input } from '@heroui/react';
 import { useState } from 'react';
 import { runWorkflow } from '../services/ai/mixology';
 import { CocktailCard } from './CocktailCard';
