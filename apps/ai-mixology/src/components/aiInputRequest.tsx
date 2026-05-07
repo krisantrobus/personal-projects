@@ -31,20 +31,28 @@ export const AIInputRequest = () => {
 
   return (
     <div>
-      <Input
-        aria-label="mixology-prompt"
-        className="w-64 mx-auto"
-        placeholder="Ask AI for a recipe"
-        id="ai-prompt"
-        value={value}
-        onChange={(event) => setValue(event.target.value)}
-        disabled={isLoading}
-      />
-      <Button type="submit" onClick={submit} isDisabled={isLoading}>
-        Submit
-      </Button>
-      {cocktailsRes &&
-        cocktailsRes.map((cocktail) => <CocktailCard cocktail={cocktail} />)}
+      <div className="absolute w-screen p-6 max-h-[calc(100vh-80px)] overflow-y-auto">
+        <div className="flex gap-8 lg:flex-row flex-col">
+          {cocktailsRes &&
+            cocktailsRes.map((cocktail) => (
+              <CocktailCard key={cocktail.name} cocktail={cocktail} />
+            ))}
+        </div>
+      </div>
+      <div className="fixed bottom-0 w-screen flex justify-center">
+        <Input
+          aria-label="mixology-prompt"
+          className="w-80 mb-6"
+          placeholder="Ask AI for a recipe"
+          id="ai-prompt"
+          value={value}
+          onChange={(event) => setValue(event.target.value)}
+          onKeyDown={(k) => {
+            if (k.code === 'Enter') submit();
+          }}
+          disabled={isLoading}
+        />
+      </div>
     </div>
   );
 };
