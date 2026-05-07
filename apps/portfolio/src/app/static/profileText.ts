@@ -249,10 +249,11 @@ export const _certifications: ICertification[] = [
 
 export const _projects: IProjectOverview[] = [
   {
-    title: 'Paste Design System',
+    title: 'Twilio: Paste Design System - UI Developer',
     description: [
       'This project involved contributing to an open-source design system used to power Twilio’s web applications. The system was built with a strong emphasis on accessibility, ensuring compliance with government and EU standards while enabling teams to create consistent, high-quality user interfaces. Individual components, as well as bundled packages, were published to NPM, making them easily consumable across internal and external projects.',
       'Working closely with design teams, they iterated on UI components to deliver intuitive and inclusive user experiences. They also contributed to maintaining and evolving the documentation site, which served as a central resource for component usage, specifications, and best practices. To enhance discoverability, the documentation platform integrated OpenAI-powered search, leveraging vector-based indexing across documentation pages and GitHub discussions. This enabled a more intelligent search experience, complemented by an interactive chat interface to help users quickly find relevant information.',
+      'They developed and enhanced complex, data-driven user interfaces using React, while also maintaining a TypeScript-based Backend-for-Frontend layer. My work focused heavily on performance, scalability, and usability, including building data visualization tools that enabled customers to monitor API usage and configure alerts. This experience aligns closely with your need for someone who can build responsive, interactive features while optimizing performance.',
     ],
     tech: [
       'EmotionCSS',
@@ -267,6 +268,36 @@ export const _projects: IProjectOverview[] = [
       'NPM',
       'Github Pipelines',
       'Supabase',
+    ],
+  },
+  {
+    title: 'Twilio: Programmable Messaging / Onboarding - Frontend Developer',
+    description: [
+      'They developed and enhanced complex, data-driven user interfaces using React, while also maintaining a TypeScript-based Backend-for-Frontend layer. My work focused heavily on performance, scalability, and usability, including building data visualization tools that enabled customers to monitor API usage and configure alerts. This experience aligns closely with your need for someone who can build responsive, interactive features while optimizing performance.',
+      'Another key area of work involved contributing to a transformational team focused on rebuilding the onboarding experience for new customers. This included redesigning landing page layouts and developing interactive onboarding wizards aimed at helping users reach the “magic moment” more quickly. The work spanned multiple products, delivering tailored experiences for trial users to improve engagement and increase conversion rates.',
+    ],
+    tech: [
+      'NestJS',
+      'NodeJS',
+      'React',
+      'Figma',
+      'Redux',
+      'Highcharts',
+      'OpenAPI',
+    ],
+  },
+  {
+    title: 'Salesforce - Technical Consultant',
+    description: [
+      'Working as a technical consultant provided the experience of working closely with an external client, the US’ largest non profit, delivering solutions in an agile way. The role for this client was as a post production full stack developer.',
+      'These responsibilities ranged from developing new interactions between external services, enhancing existing solutions as well as refactoring old processes. Alongside all of these development tasks I was also required to investigate data issues from quality to unexpected process results. Classes were written in order to target and clean these data sets along with resolving any bugs identified along the way.',
+      'Another area of work involved configuring marketing campaigns for large-scale email outreach, targeting specific user segments to maximize engagement, impact, and campaign performance efficiency.',
+    ],
+    tech: [
+      'Batch ETL',
+      'Salesforce',
+      'Lightning Design System',
+      'Campaign Management',
     ],
   },
 ];

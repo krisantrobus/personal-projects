@@ -13,8 +13,8 @@ export const ProjectOverview: React.FC<IProjectOverview> = ({
       {description?.map((d) => (
         <p className="mb-4">{d}</p>
       ))}
-      <div className="flex justify-start">
-        <span>Knowledge: </span>
+      <div className="flex justify-start lg:flex-row flex-col">
+        <span className="mb-4 lg:mb-0">Knowledge: </span>
         <div className="-mt-1 ms-2">
           <Skills align="start" skills={tech} />
         </div>

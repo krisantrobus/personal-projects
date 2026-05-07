@@ -76,7 +76,7 @@ export default function Index() {
           {_projects.map((proj) => (
             <div
               key={`pro-summary-${proj.title.toLowerCase().replace('\s', '-')}`}
-              className="mb-4"
+              className="mb-8"
             >
               <ProjectOverview {...proj} />
             </div>
