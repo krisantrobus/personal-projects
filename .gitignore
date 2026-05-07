@@ -48,3 +48,5 @@ out
 test-output
 
 .nx
+
+**/**/.env
