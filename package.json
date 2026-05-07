@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "serve": "nx dev portfolio",
-    "build": "nx build portfolio"
+    "serve:portfolio": "nx dev portfolio",
+    "build:portfolio": "nx build portfolio",
+    "serve:mixology": "nx dev ai-mixology",
+    "build:mixology": "nx build ai-mixology"
   },
   "private": true,
   "dependencies": {
